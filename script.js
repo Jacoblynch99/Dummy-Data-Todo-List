@@ -12,9 +12,6 @@ let arrayOfTodos = [
     "completed": false
   }]
 
-  let elementColorRed = "red"
-  let elementColorGreen = "green"
-
   const fetchTodos = () => {
     fetch('https://jsonplaceholder.typicode.com/todos')
     .then( (response) => response.json())
@@ -69,10 +66,3 @@ let arrayOfTodos = [
         newLI.style.color = fontColor
     }
   }
-
-
-
-// document.getElementsByTagName(H4).style.color
-
-console.log(arrayOfTodos[0].title)
-console.log(arrayOfTodos[1].title)
