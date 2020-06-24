@@ -23,11 +23,19 @@ let arrayOfTodos = [
   }
 
   const populateTodos = () => {
+    
+    
     let newElement = document.getElementById("todo-list")
-    let newLI = document.createElement("li")
-    let fork = document.createTextNode(arrayOfTodos[i].title)
-    newLI.appendChild(fork)
-    newElement.appendChild(newLI)
+    
+    for (let i = 0; i < arrayOfTodos.length; i++) {
+        let newli = document.createElement("LI")
+        let fork = document.createTextNode(arrayOfTodos[i].userId)
+        let fork = document.createTextNode(arrayOfTodos[i].id)
+        let fork = document.createTextNode(arrayOfTodos[i].title)
+        let fork = document.createTextNode(arrayOfTodos[i].completed)
+        newli.appendChild(fork)
+        newElement.appendChild(newli)   
+    }
 
 
 
