@@ -23,5 +23,15 @@ let arrayOfTodos = [
   }
 
   const populateTodos = () => {
+    let newElement = document.getElementById("todo-list")
+    let newLI = document.createElement("li")
+    let fork = document.createTextNode(arrayOfTodos[i].title)
+    newLI.appendChild(fork)
+    newElement.appendChild(newLI)
+
+
 
   }
+
+console.log(arrayOfTodos[0].title)
+console.log(arrayOfTodos[1].title)
