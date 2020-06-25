@@ -12,6 +12,17 @@ let arrayOfTodos = [
     "completed": false
   }]
 
+let x = ""
+
+const userNum = (num) => {
+  x = parseInt(num)
+  console.log(x)
+}
+
+
+
+
+
   const fetchTodos = () => {
     fetch('https://jsonplaceholder.typicode.com/todos')
     .then( (response) => response.json())
@@ -22,7 +33,7 @@ let arrayOfTodos = [
     console.log(arrayOfTodos)
   }
 
-  const populateTodos = () => {
+  const populateTodos = (x) => {
     
     
     let newElement = document.getElementById("todo-list")
@@ -65,4 +76,32 @@ let arrayOfTodos = [
 
         newLI.style.color = fontColor
     }
+  }
+
+  const userIdTodos = () => {
+    
+
+    
+    let arrayOfUserTodos = arrayOfTodos.filter(function(item === x) {
+      return populateTodos()
+    } 
+    // => item.userId === x))
+
+    console.log(x)
+  
+     
+    // if(arrayOfUserTodos === x) {
+    //   populateTodos()
+    // } else {
+    //   return false
+    // }
+  
+
+
+    
+
+    
+    
+  
+
   }
