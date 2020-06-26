@@ -11,7 +11,11 @@
     <main>
         <button onclick="fetchTodos()">Fetch Todos</button>
         <button onclick="logTodos()">Log Todos</button>
-        <button onclick="populateTodos()">Populate Todos</button>
+        <button onclick="populateAllTodos()">Populate Todos</button>
+        <button onclick="removeTodos()">Remove Todo List</button>
+        <button onclick="filterTrueFalse()">Todo Status</button>
+        <input id="entryId" type="text" value="" onkeyup="userNum(this.value)">
+        <button type="button" onclick="userIdTodos()">Submit</button>
         <ol id="todo-list">
         <!-- LIs will go here -->
         </ol>
